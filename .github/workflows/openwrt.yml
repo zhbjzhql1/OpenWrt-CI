@@ -44,7 +44,7 @@ jobs:
           sudo -E timedatectl set-timezone "Asia/Shanghai"
       - name: Download lede
         run: |
-          git clone https://github.com/coolsnowwolf/lede
+          git clone https://github.com/openwrt/openwrt
           cp .config ./lede/.config
           mv ./lede/* ./
       - name: Install Helloword
