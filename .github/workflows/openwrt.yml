@@ -45,9 +45,9 @@ jobs:
       - name: Download lede
         run: |
           git clone https://github.com/openwrt/openwrt
-          cp .config ./lede/.config
-          mv ./lede/* ./
-      - name: Install Helloword
+          cp .config ./openwrt/.config
+          mv ./openwrt/* ./
+      - name: openwrt Helloword
         run: |
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
       - name: Install OpenClash
